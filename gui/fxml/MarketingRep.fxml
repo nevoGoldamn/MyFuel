@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MarketingRepController">
+   <children>
+      <StackPane layoutY="-9.0" prefHeight="593.0" prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="acDashBord">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" prefHeight="678.0" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="593.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fill="#cc3535" layoutX="28.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MyFuel">
+                                       <font>
+                                          <Font name="System Bold Italic" size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="homeButton" contentDisplay="TOP" layoutX="-1.0" layoutY="36.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Home">
+                                       <graphic>
+                                          <ImageView fx:id="home" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/home.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="registrationButton" contentDisplay="TOP" layoutX="-1.0" layoutY="127.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Registration">
+                                       <graphic>
+                                          <ImageView fx:id="user" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/adduser.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="46.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="SaleCampaignButton" contentDisplay="TOP" layoutX="-1.0" layoutY="309.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Sale Campaign ">
+                                       <graphic>
+                                          <ImageView fx:id="campaign" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/sell2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="analiticReportBurron" contentDisplay="TOP" layoutX="-1.0" layoutY="218.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Weekly ratings">
+                                       <graphic>
+                                          <ImageView fx:id="analitic" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/clipboard.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="46.0" layoutY="392.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="GoTodalkanButton" contentDisplay="TOP" layoutY="397.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Dalkan">
+                                       <graphic>
+                                          <ImageView fx:id="dalkanIcon" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/gas.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <BorderPane fx:id="appContent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane fx:id="acHead" prefHeight="42.0" prefWidth="753.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane layoutX="14.0" layoutY="-15.0" prefHeight="60.0" prefWidth="751.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <AnchorPane prefHeight="48.0" prefWidth="160.0">
+                                             <children>
+                                                <MenuButton fx:id="menuButton" layoutX="30.0" layoutY="4.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="130.0" styleClass="button" stylesheets="@../MyFuelCss/Application.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" onAction="#handelClicks">
+                                                         <graphic>
+                                                            <VBox alignment="TOP_RIGHT" prefHeight="160.0" prefWidth="130.0">
+                                                               <children>
+                                                                  <Label fx:id="menuUserName" alignment="CENTER" prefHeight="60.0" prefWidth="134.0" text="UserName">
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Label fx:id="menuRole" alignment="CENTER" prefHeight="60.0" prefWidth="143.0" text="Role">
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Button fx:id="logOutButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handelClicks" prefHeight="40.0" prefWidth="73.0" text="logOut" />
+                                                               </children>
+                                                            </VBox>
+                                                         </graphic>
+                                                      </MenuItem>
+                                                  </items>
+                                                   <graphic>
+                                                      <AnchorPane prefHeight="20.0" prefWidth="120.0">
+                                                         <children>
+                                                            <Label fx:id="labelUserName" layoutX="40.0" layoutY="9.0" prefHeight="17.0" prefWidth="59.0" text="User" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="13.0" />
+                                                               </font></Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </graphic>
+                                                   <padding>
+                                                      <Insets left="-15.0" top="-10.0" />
+                                                   </padding>
+                                                </MenuButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="14.0" prefWidth="151.0">
+                                       <children>
+                                          <ToggleButton fx:id="toggleButton" mnemonicParsing="false" onAction="#sideMenuToogleBtnOnCLick" styleClass="button" stylesheets="@../MyFuelCss/Application.css">
+                                             <graphic>
+                                                <ImageView fx:id="imgMenuBtn" fitHeight="52.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icon/menu.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label fx:id="TitelId" layoutX="-5.0" layoutY="2.0" text="MyFuel" textFill="#fff7f7">
+                                             <font>
+                                                <Font size="27.0" />
+                                             </font></Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="RegistrationFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Button fx:id="PurchaseNextButton" contentDisplay="TOP" layoutX="526.0" layoutY="454.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="68.0" prefWidth="108.0" text="Next">
+                                       <graphic>
+                                          <ImageView fx:id="continue1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/arrow.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <RadioButton fx:id="isPrivateUserButton" layoutX="389.0" layoutY="202.0" mnemonicParsing="false" onAction="#RBclick" text="Private" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia" size="16.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="group2" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton fx:id="isCompanyButton" layoutX="389.0" layoutY="239.0" mnemonicParsing="false" onAction="#RBclick" text="Company" textFill="#055050" toggleGroup="$group2">
+                                       <font>
+                                          <Font name="Georgia" size="16.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <CheckBox fx:id="wantACarButton" layoutX="391.0" layoutY="160.0" mnemonicParsing="false" onAction="#handelClicks" text="want to register a car ?" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia" size="16.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <Button fx:id="SubmitButton" contentDisplay="TOP" layoutX="391.0" layoutY="454.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="68.0" prefWidth="108.0" text="Submit">
+                                       <graphic>
+                                          <ImageView fx:id="submit1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/v.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <VBox layoutX="37.0" layoutY="160.0" prefHeight="293.0" prefWidth="341.0">
+                                       <children>
+                                          <HBox prefHeight="100.0" prefWidth="263.0">
+                                             <children>
+                                                <Label prefHeight="21.0" prefWidth="92.0" text="First Name:" textFill="#055050">
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="Georgia" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="UserFirstName" prefHeight="28.0" prefWidth="166.0" promptText="First Name">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefHeight="21.0" prefWidth="92.0" text="Last Name:" textFill="#055050">
+                                                   <HBox.margin>
+                                                      <Insets right="20.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="Georgia" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="UserLastName" prefHeight="28.0" prefWidth="166.0" promptText="Last Name">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="14.0" />
+                                                   </font>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefHeight="29.0" prefWidth="28.0" text="ID:" textFill="#055050">
+                                                   <HBox.margin>
+                                                      <Insets left="55.0" right="20.0" />
+                                                   </HBox.margin>
+                                                   <font>
+                                                      <Font name="Georgia" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="UserId" prefHeight="28.0" prefWidth="166.0" promptText="ID">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="14.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label prefHeight="21.0" prefWidth="104.0" text="Email:" textFill="#055050">
+                                                   <padding>
+                                                      <Insets left="35.0" right="20.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Georgia" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="UserEmail" prefWidth="166.0" promptText="Email">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="14.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="310.0" prefHeight="86.0" prefWidth="314.0">
+                                             <children>
+                                                <Label prefHeight="12.0" prefWidth="107.0" text="Credit Card:" textFill="#055050">
+                                                   <padding>
+                                                      <Insets right="20.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Georgia" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="UserCreditCard" prefWidth="165.0" promptText="Credit Card">
+                                                   <font>
+                                                      <Font name="Cambria Bold" size="14.0" />
+                                                   </font>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="34.0" layoutY="18.0" prefHeight="104.0" prefWidth="395.0">
+                                       <children>
+                                          <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                             <image>
+                                                <Image url="@../icon/about.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="1. To end registration press 'Submit'." textFill="#055050">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="76.0" text="2. To continue to purchase program press 'Next'." textFill="#055050">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="homeFrame" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Label fx:id="welcomeLabel" layoutX="37.0" layoutY="51.0" prefHeight="26.0" prefWidth="284.0" text="Welcome Label" />
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="DalkanFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Button fx:id="addDalkanButton" contentDisplay="TOP" layoutX="318.0" layoutY="279.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Add Dalkan">
+                                       <graphic>
+                                          <ImageView fx:id="home121" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/gas.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ListView fx:id="carListDalkan" layoutX="69.0" layoutY="75.0" prefHeight="372.0" prefWidth="200.0" />
+                                    <TextField fx:id="customerIDTextFieldDalkan" layoutX="318.0" layoutY="98.0" promptText="Customer ID">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="318.0" layoutY="75.0" text="Customer ID:" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="removeDalkanButton" contentDisplay="TOP" layoutX="318.0" layoutY="377.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Remove Dalkan">
+                                       <graphic>
+                                          <ImageView fx:id="home1211" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/gas.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="PurchaseFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Label layoutX="22.0" layoutY="94.0" styleClass="fontstyle1" stylesheets="@../MyFuelCss/Application.css" text="Choose Purchase Program for costumer:" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox layoutX="22.0" layoutY="128.0" prefHeight="166.0" prefWidth="191.0">
+                                       <children>
+                                          <RadioButton fx:id="radioButton1" mnemonicParsing="false" onAction="#handleRadioButtons" text="Intermediate" textFill="#055050">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="group1" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioButton2" mnemonicParsing="false" onAction="#handleRadioButtons" text="Regular" textFill="#055050" toggleGroup="$group1">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioButton3" mnemonicParsing="false" onAction="#handleRadioButtons" text="Plurality of Cars" textFill="#055050" toggleGroup="$group1">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="20.0" />
+                                             </VBox.margin>
+                                          </RadioButton>
+                                          <RadioButton fx:id="radioButton4" mnemonicParsing="false" onAction="#handleRadioButtons" text="Full" textFill="#055050" toggleGroup="$group1">
+                                             <font>
+                                                <Font name="Georgia" size="16.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="submitPurchaseProgramButton" contentDisplay="TOP" layoutX="604.0" layoutY="448.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="132.0" text="Submit">
+                                       <graphic>
+                                          <ImageView fx:id="home1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/v.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="addDalkanButton" contentDisplay="TOP" layoutX="606.0" layoutY="279.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Add Dalkan">
+                                       <graphic>
+                                          <ImageView fx:id="home12" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/gas.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ListView fx:id="carListPurchase" layoutX="377.0" layoutY="176.0" onMouseClicked="#handleMouseClick" prefHeight="342.0" prefWidth="200.0" />
+                                    <TextField fx:id="customerIDTextField" layoutX="377.0" layoutY="95.0" promptText="Customer ID">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="carNumberTextField" layoutX="572.0" layoutY="94.0" promptText="Car Number">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button fx:id="addCarButton" contentDisplay="TOP" layoutX="606.0" layoutY="176.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Add Car">
+                                       <graphic>
+                                          <ImageView fx:id="home121" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/car.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="BackToRegButton" contentDisplay="TOP" layoutX="42.0" layoutY="448.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Back">
+                                       <graphic>
+                                          <ImageView fx:id="home11" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/back.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Label layoutX="377.0" layoutY="69.0" styleClass="fontstyle1" stylesheets="@../MyFuelCss/Application.css" text="Customer ID:" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="572.0" layoutY="69.0" styleClass="fontstyle1" stylesheets="@../MyFuelCss/Application.css" text="Car Number:" textFill="#055050">
+                                       <font>
+                                          <Font name="Georgia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="saleCampaignFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <VBox layoutX="275.0" layoutY="75.0" prefHeight="191.0" prefWidth="223.0">
+                                       <children>
+                                          <Label text="Campaign Name:">
+                                             <font>
+                                                <Font name="Georgia Bold Italic" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin></Label>
+                                          <TextField fx:id="CampaignNameTF" promptText="CampaignName">
+                                             <VBox.margin>
+                                                <Insets bottom="30.0" />
+                                             </VBox.margin></TextField>
+                                          <Label layoutX="10.0" layoutY="10.0" text="Discount (0-99):">
+                                             <font>
+                                                <Font name="Georgia Bold Italic" size="20.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <TextField fx:id="discountTF" layoutX="10.0" layoutY="27.0" promptText="Discount" />
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="generateCampaignTButton" contentDisplay="TOP" layoutX="323.0" layoutY="266.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Generate Tamplate">
+                                       <graphic>
+                                          <ImageView fx:id="campaign1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/v.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="weekReportFrame" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Button fx:id="analiticButton" contentDisplay="TOP" layoutX="323.0" layoutY="244.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="70.0" prefWidth="127.0" text="Analitic Report">
+                                       <graphic>
+                                          <ImageView fx:id="analitic1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/clipboard.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../MyFuelCss/Application.css" />
+   </stylesheets>
+</AnchorPane>

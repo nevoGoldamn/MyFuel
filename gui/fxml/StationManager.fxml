@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.StationManagerController">
+   <children>
+      <StackPane layoutY="-9.0" prefHeight="593.0" prefWidth="767.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="acDashBord">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" prefHeight="678.0" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="593.0" prefWidth="127.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Text fill="#cc3535" layoutX="27.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MyFuel">
+                                       <font>
+                                          <Font name="System Bold Italic" size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="SupplyOrderButton" contentDisplay="TOP" layoutX="-1.0" layoutY="139.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="Supply Order">
+                                       <graphic>
+                                          <ImageView fx:id="employee" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/stock.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="46.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="aboutButton" contentDisplay="TOP" layoutY="496.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="About">
+                                       <graphic>
+                                          <ImageView fx:id="about" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/about.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="46.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="reviewRatesButton1" contentDisplay="TOP" layoutX="-1.0" layoutY="319.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="Quarterly Reports">
+                                       <graphic>
+                                          <ImageView fx:id="sell1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/clipboard.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="46.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="SetThresholdButton" contentDisplay="TOP" layoutX="-1.0" layoutY="228.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="Set Threshold">
+                                       <graphic>
+                                          <ImageView fx:id="sell" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/check.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="homeButton" contentDisplay="TOP" layoutY="42.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="Home">
+                                       <graphic>
+                                          <ImageView fx:id="home" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/home.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <BorderPane fx:id="appContent" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane fx:id="acHead" prefHeight="42.0" prefWidth="753.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <GridPane layoutX="14.0" layoutY="-15.0" prefHeight="60.0" prefWidth="751.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="60.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                       <children>
+                                          <AnchorPane prefHeight="48.0" prefWidth="160.0">
+                                             <children>
+                                                <MenuButton fx:id="menuButton" layoutX="30.0" layoutY="4.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="130.0" styleClass="button" stylesheets="@../MyFuelCss/Application.css" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="4.0">
+                                                  <items>
+                                                    <MenuItem mnemonicParsing="false" onAction="#handelClicks">
+                                                         <graphic>
+                                                            <VBox alignment="TOP_RIGHT" prefHeight="160.0" prefWidth="130.0">
+                                                               <children>
+                                                                  <Label fx:id="menuUserName" alignment="CENTER" prefHeight="60.0" prefWidth="134.0" text="UserName">
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Label fx:id="menuRole" alignment="CENTER" prefHeight="60.0" prefWidth="143.0" text="Role">
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Button fx:id="logOutButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handelClicks" prefHeight="40.0" prefWidth="73.0" text="logOut" />
+                                                               </children>
+                                                            </VBox>
+                                                         </graphic>
+                                                      </MenuItem>
+                                                  </items>
+                                                   <graphic>
+                                                      <AnchorPane prefHeight="20.0" prefWidth="120.0">
+                                                         <children>
+                                                            <Label fx:id="labelUserName" layoutX="36.0" layoutY="13.0" prefHeight="17.0" prefWidth="59.0" text="User" textFill="WHITE">
+                                                               <font>
+                                                                  <Font size="13.0" />
+                                                               </font></Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </graphic>
+                                                   <padding>
+                                                      <Insets left="-15.0" top="-10.0" />
+                                                   </padding>
+                                                </MenuButton>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <ToggleButton fx:id="toggleButton" mnemonicParsing="false" onAction="#sideMenuToogleBtnOnCLick" styleClass="button" stylesheets="@../MyFuelCss/Application.css">
+                                             <graphic>
+                                                <ImageView fx:id="imgMenuBtn" fitHeight="52.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../icon/menu.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </ToggleButton>
+                                       </children>
+                                    </HBox>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label fx:id="TitleID" layoutX="47.0" layoutY="2.0" text="Set Threshold" textFill="#fff7f7">
+                                             <font>
+                                                <Font size="27.0" />
+                                             </font></Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="aboutFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <TextArea fx:id="textareaAbout" layoutX="152.0" layoutY="122.0" prefHeight="314.0" prefWidth="468.0" text="MyFule is a software desigend by: &#10;Nevo Goldman&#10;Ravid Gal&#10;Lipaz Zehavi&#10;Ohad Cohen&#10;Biata Geilikberg&#10;&#10;All rights reserved 2020.&#10;&#10;                                                     WELCOME TO MYFUEL &#10;&#10;&#10;&#10;" />
+                                 </children></AnchorPane>
+                              <AnchorPane fx:id="setThresholdFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <TextArea layoutX="35.0" layoutY="131.0" prefHeight="100.0" prefWidth="300.0" style="-fx-text-fill: #FFFFFF;" text="For your information:&#10; the changes that you are about to apply&#10; will have a direct affect on the&#10; 'Automatic Supply System'.&#10;">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TableView fx:id="ThresholdTableView" layoutX="386.0" layoutY="65.0" prefHeight="384.0" prefWidth="346.0">
+                                      <columns>
+                                        <TableColumn fx:id="ProdIDThreshColumn" prefWidth="75.0" text="Product ID" />
+                                          <TableColumn fx:id="prodNameColumn" minWidth="50.0" prefWidth="75.0" text="Product Name" />
+                                        <TableColumn fx:id="ThresholdColumn" minWidth="50.0" onEditCommit="#SetThreshold" prefWidth="75.0" text="Threshold Level" />
+                                      </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <TextArea fx:id="employeTextArea1" layoutX="35.0" layoutY="299.0" prefHeight="100.0" prefWidth="300.0" style="-fx-text-fill: #FFFFFF;" styleClass="textArea" stylesheets="@../MyFuelCss/Application.css" text="To change  threshold level:&#10;1. Double-click on the &quot;Threshold Level&quot; field.&#10;2. Change the field.&#10;3.Press 'Enter'.">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                    </TextArea>
+                                    <Button fx:id="saveThresholdsButton" layoutX="510.0" layoutY="472.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="50.0" prefWidth="76.0" text="Save" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="ItemsInStock" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <TableView fx:id="ThresholdTableView12" layoutX="32.0" layoutY="113.0" prefHeight="362.0" prefWidth="658.0">
+                                       <columns>
+                                          <TableColumn fx:id="ProdIDThreshColumn113" minWidth="50.0" prefWidth="75.0" text="Product Name" />
+                                          <TableColumn fx:id="ProdIDThreshColumn11" prefWidth="75.0" text="Product ID" />
+                                          <TableColumn fx:id="ThresholdColumn12" minWidth="50.0" onEditCommit="#SetThreshold" prefWidth="75.0" text="Exists" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <Button layoutX="597.0" layoutY="489.0" mnemonicParsing="false" prefWidth="66.0" text="Send" />
+                                    <TextField layoutX="129.0" layoutY="52.0" />
+                                    <Label fx:id="quarterly2" layoutX="32.0" layoutY="51.0" text="quarterly">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="PurchaseReport" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <TableView fx:id="ThresholdTableView1" layoutX="32.0" layoutY="113.0" prefHeight="362.0" prefWidth="658.0">
+                                       <columns>
+                                          <TableColumn fx:id="ProdIDThreshColumn11" minWidth="50.0" prefWidth="75.0" text="Product Name" />
+                                          <TableColumn fx:id="ProdIDThreshColumn1" prefWidth="75.0" text="Product ID" />
+                                          <TableColumn fx:id="ThresholdColumn1" minWidth="50.0" onEditCommit="#SetThreshold" prefWidth="75.0" text="Purchased" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <Button layoutX="597.0" layoutY="489.0" mnemonicParsing="false" prefWidth="66.0" text="Send" />
+                                    <TextField layoutX="129.0" layoutY="52.0" />
+                                    <Label fx:id="quarterly" layoutX="32.0" layoutY="51.0" text="quarterly">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font></Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="RevenueReport" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <TableView fx:id="ThresholdTableView11" layoutX="32.0" layoutY="113.0" prefHeight="330.0" prefWidth="657.0">
+                                       <columns>
+                                          <TableColumn fx:id="ProdIDThreshColumn111" minWidth="50.0" prefWidth="75.0" text="Product Name" />
+                                          <TableColumn fx:id="ProdIDThreshColumn11" prefWidth="75.0" text="Product ID" />
+                                          <TableColumn fx:id="ThresholdColumn11" minWidth="50.0" onEditCommit="#SetThreshold" prefWidth="75.0" text="Income" />
+                                       </columns>
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy>
+                                    </TableView>
+                                    <Button layoutX="597.0" layoutY="489.0" mnemonicParsing="false" prefWidth="66.0" text="Send" />
+                                    <TextField layoutX="129.0" layoutY="52.0" />
+                                    <Label fx:id="quarterly1" layoutX="32.0" layoutY="51.0" text="quarterly">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Text layoutX="32.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost:" />
+                                    <Text layoutX="104.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;The Total &quot;" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="supplyOrderFrame" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;" stylesheets="@../MyFuelCss/Application.css">
+                                 <children>
+                                    <Button fx:id="SubmitOrderButton" contentDisplay="TOP" layoutX="323.0" layoutY="403.0" mnemonicParsing="false" onAction="#handelClicks" prefHeight="60.0" prefWidth="127.0" text="Submit Order">
+                                       <graphic>
+                                          <ImageView fx:id="approveSign" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../icon/v.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ListView fx:id="OrderListView" layoutX="98.0" layoutY="129.0" onMouseClicked="#handleMouseClick" prefHeight="225.0" prefWidth="200.0" />
+                                    <Label layoutX="98.0" layoutY="100.0" styleClass="fontstyle1" stylesheets="@../MyFuelCss/Application.css" text="Order List (by product) For Approval:" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextArea fx:id="OrderDetailsTA" layoutX="452.0" layoutY="127.0" prefHeight="225.0" prefWidth="248.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="homeFrame" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B2EADB;">
+                                 <children>
+                                    <Label fx:id="welcomeLabel" layoutX="72.0" layoutY="50.0" text="Label" />
+                                 </children></AnchorPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+   <stylesheets>
+      <URL value="@../style/Application.css" />
+      <URL value="@../MyFuelCss/Application.css" />
+   </stylesheets>
+</AnchorPane>

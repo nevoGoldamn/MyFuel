@@ -1,0 +1,33 @@
+
+.button1{
+	-fx-background-color: #3F2B63;
+	-fx-font-family: "Times New Roman", Times, serif;
+	-fx-font-size: 12px;
+	-fx-color: #FFFFFF;
+	-fx-font-weight: 700;
+	-fx-font-style: normal;
+}
+
+.button1:hover{
+	-fx-background-color: #B080D8;
+}
+
+
+.apanemid{
+	-fx-background-color: #B080D8;
+}
+
+.fontstyle1{
+	-fx-font-family: "Courier New", Courier, monospace;
+	-fx-font-size: 20px;
+	-fx-color: #FFFFFF;
+	-fx-font-weight: 700;
+	-fx-font-style: normal;
+}
+
+
+
+
+
+
+
